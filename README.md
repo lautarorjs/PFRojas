@@ -1,9 +1,11 @@
 <h1 align="center">Hi 👋, I'm Lautaro</h1>
-<h3 align="center">A passionate frontend developer from Argentina</h3>
+<h3 align="center">A passionate frontend developer from Argentina.</h3>
 
 - 🔭 I’m currently working on **page for my digital education academy**
 
 - 🌱 I’m currently learning **bootstraps and javascript**
+
+- Acerca de mi proyecto: **Soy técnico electrónico, estoy estudiando ingeniería electrónica (cursando materias de segundo año) y tengo 21 años. Hace un tiempo me ofrecieron desde el municipio de mi ciudad dar clases de robótica, puesto que asistí a competencias regionales y me fue bastante bien, di el si. Entonces cuando empece a dar las clases (a niños y niñas de 10 a 16 años) me di cuenta que lo podía escalar a algo privado en un futuro, en donde también lo que yo ofreciera (ya que sería de pago) tuviera mayor valor. Las clases serían presenciales, enfocadas a chicos y chicas de entre 8 y 18 años de edad, con varias temáticas a elegir. Mi idea es hacer una especie de escuela digital donde se enseñen las bases de todo (electrónica, robótica, programación, edición de video, inteligencia artificial, cryptos), por ahí no profundizar tanto sino darles a los alumnos las herramientas para que después puedan elegir el día de mañana su especialización y divertirse en el camino (la robótica es muy divertida). Y estas clases presenciales que sean acompañadas de un material virtual, en formato de cuestionario, videos cortos, y algún par de diapositivas o juegos. De ahí que incluí la pagina "Plataforma".**
 
 - 📫 How to reach me **lautaroezequielrjs@gmail.com**
 
