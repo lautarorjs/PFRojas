@@ -1,7 +1,7 @@
 /*!  RESET  */
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
 }
@@ -13,6 +13,14 @@ a{
 
 ul{
     list-style: none;
+}
+
+h1, h2, h3, h4{
+    margin-bottom: 0rem;
+}
+
+a:hover{
+    color: #ffffff
 }
 
 /*!  FONTS */
@@ -27,7 +35,7 @@ header{
     top: 0px;
 }
 
-nav{
+header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,22 +43,23 @@ nav{
     font-size: 20px;
 }
 
-nav .logo{
+header nav .logo{
     font-size: 40px;
     font-weight: 300;
 }
 
-nav ul{
+header nav ul{
     display: flex;
     margin-right: 30px;
-    flex-wrap: wrap;
+    margin-bottom: 0px;
+    align-items: center;
 }
 
-nav ul li{
+header nav ul li{
     margin-inline: 35px;
 }
 
-nav ul li a {
+header nav ul li a{
     font-size: 26px;
     font-weight: lighter;
 }
@@ -114,39 +123,75 @@ nav .plataforma{
 
 .cursos h2{
     font-size: 42px;
-    background-color: #f5732ded;
+    background-color: #f5732d;
     text-align: center;
     padding: 18px;
     border-bottom: 5px solid rgba(0, 0, 0, 0.469);
 }
 
 .cursos .tarjetas{
-    display: flex;
-    justify-content: center;
+    display: grid;
     background-color: #eb6217b8;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px;
+    grid-template-areas: 
+    "tarjeta"
+    ;
+    justify-items: center;
+    align-items: center;
+    column-gap: -20px;
 }
 
 .cursos div img{
-    width: 270px;
+    width: 290px;
     height: 200px;
 }
 
 .cursos .tarjetas .tarjeta{
     border: 2px solid black;
     box-shadow: 2px 5px 12px black;
-    width: 270px;
-    height: 250px;
+    width: 290px;
+    height: 310px;
     background-color: #CF5C36;
-    margin: 40px;
     box-sizing: content-box;
+    grid-area: "tarjeta";
 }
 .cursos .tarjetas .tarjeta .divFooter{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center
+    align-items:center;
+    text-align: center;
+
 }
+
+.cursos .tarjetas .tarjeta .divFooter .adquirir{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5732ded;
+    ;
+}
+
+.cursos .tarjetas .tarjeta .divFooter .adquirir a{
+    position: relative;
+    bottom: 3px;
+    padding: 3px;
+    text-decoration: underline;
+}
+
+.cursos .tarjetas .tarjeta .divFooter .nombretarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+}
+
+
+
 
 /******************                   CONTACTO                   *******************/
 
@@ -214,7 +259,7 @@ footer .logos li a{
 
 
 
-/*!  Pagina Plataforma   */
+/******************                Ingreso Plataforma                *******************/
 
 .singin{
     background-image: url(../images/nina-compu-biblioteca.jpg);
@@ -236,3 +281,23 @@ footer .logos li a{
     border-radius: 5px;
 }
 
+/******************                Plataforma                *******************/
+
+header .sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+/******************   Media Queris                             *******************/
+@media  screen and (max-width:1260px) {
+    header{
+        position: relative;
+    }
+
+    header nav{
+        flex-direction: column;
+    } 
+    header nav ul li{
+        margin-bottom: 10px;
+    }
+}
