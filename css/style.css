@@ -254,6 +254,13 @@ footer .logos{
     }
 }
 
+@media (max-width: 940px) {
+    header{
+        position:relative;
+        top: 0px;
+    }
+}
+
 /* @media (max-width: 991px){
     .card img{
         height: 199.2px;
