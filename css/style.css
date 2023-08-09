@@ -3,20 +3,21 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace !important;
 }
 
 a{
     text-decoration: none;
-    color: #000000;
+    color: #000000 !important;
 }
 
 ul{
     list-style: none;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     margin-bottom: 0rem;
+    color: #000000 !important;
 }
 
 a:hover{
@@ -30,45 +31,36 @@ a:hover{
 /*!  HEADER  */
 
 header{
-    background-color: #377771;
     position: sticky;
     top: 0px;
 }
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    font-size: 20px;
+header .navbar{
+    background-color: #377771!important;
+    font-size: 25px;
+    z-index: 1000;
 }
 
 header nav .logo{
     font-size: 40px;
-    font-weight: 300;
-}
-
-header nav ul{
-    display: flex;
-    margin-right: 30px;
-    margin-bottom: 0px;
-    align-items: center;
 }
 
 header nav ul li{
     margin-inline: 35px;
 }
 
-header nav ul li a{
-    font-size: 26px;
-    font-weight: lighter;
+.btn{
+    font-weight: 900;;
 }
+
 
 nav .plataforma{
     font-size: 30px;
     border: 4px solid black;
     border-style: outset;
 }
+
+
 
 /******************                   INDEX                    *******************/
 
@@ -90,12 +82,13 @@ nav .plataforma{
 }
 
 .presentacion h3{
-    font-size: 190%;
+    font-size: 30px;
     font-weight: lighter;
+    text-align: center;
 }
 
 .presentacion h4{
-    font-size: 190%;
+    font-size: 30px;
     font-weight: lighter;
     text-align: center;
     padding: 15px;
@@ -106,92 +99,50 @@ nav .plataforma{
 }
 
 .formaciones h2{
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
 }
 
-.formaciones h3{
-    font-size: 190%;
+.textocuatro{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.textocuatro h3{
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
 }
 
-/******************                   CURSOS                   *******************/
-
-
-
-.cursos h2{
-    font-size: 42px;
-    background-color: #f5732d;
-    text-align: center;
-    padding: 18px;
-    border-bottom: 5px solid rgba(0, 0, 0, 0.469);
+.center-vertically{
+    max-height: 100vh;
+    width: 100vw;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
-.cursos .tarjetas{
-    display: grid;
-    background-color: #eb6217b8;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 370px;
-    grid-template-areas: 
-    "tarjeta"
-    ;
-    justify-items: center;
-    align-items: center;
-    column-gap: -20px;
+.carousel-caption h5{
+    font-size: 70px;
+    text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
 }
 
-.cursos div img{
-    width: 290px;
-    height: 200px;
-}
+/******************                     CURSO                    *******************/
 
-.cursos .tarjetas .tarjeta{
-    border: 2px solid black;
-    box-shadow: 2px 5px 12px black;
-    width: 290px;
-    height: 310px;
-    background-color: #CF5C36;
-    box-sizing: content-box;
-    grid-area: "tarjeta";
-}
-.cursos .tarjetas .tarjeta .divFooter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    text-align: center;
+.tarjetas{
 
-}
-
-.cursos .tarjetas .tarjeta .divFooter .adquirir{
-    width: 100%;
-    height: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5732ded;
-    ;
-}
-
-.cursos .tarjetas .tarjeta .divFooter .adquirir a{
-    position: relative;
-    bottom: 3px;
-    padding: 3px;
-    text-decoration: underline;
-}
-
-.cursos .tarjetas .tarjeta .divFooter .nombretarjeta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 64px;
-    width: 100%;
+    background-color: #CF5C36 !important;
 }
 
 
-
+.card img{
+    height: 199.2px;
+    width: auto;
+    object-fit: cover;
+}
 
 /******************                   CONTACTO                   *******************/
 
@@ -243,19 +194,15 @@ footer div p{
     font-weight: 100;
     font-style: italic;
     text-align: center;
+    padding-top: 5px;
 }
 
-footer .logos li{
-    display: inline-block;
-    width: 30%;
+footer .logos{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 30px 25px;
 }
-
-footer .logos li a{
-    display: block;
-    text-align: center;
-    padding: 12px 224px;
-}
-
 
 
 
@@ -283,21 +230,114 @@ footer .logos li a{
 
 /******************                Plataforma                *******************/
 
-header .sidebar{
+/* header .sidebar{
     display: flex;
     flex-direction: column;
-}
+} */
 
 /******************   Media Queris                             *******************/
-@media  screen and (max-width:1260px) {
-    header{
-        position: relative;
-    }
-
-    header nav{
-        flex-direction: column;
-    } 
-    header nav ul li{
-        margin-bottom: 10px;
+@media (min-width: 1200px){
+    .card img{
+        width: 353.98px;
     }
 }
+
+@media (max-width: 1150px) {
+    .carousel-item h5 {
+        font-size: 45px;
+        text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+    }
+}
+@media (max-width: 1070px){
+    .acercadenosotros{
+        display: none !important;
+    }
+}
+
+/* @media (max-width: 991px){
+    .card img{
+        height: 199.2px;
+        width: 214px;
+    }
+} */
+
+@media (max-width: 940px) {
+    .carousel-item h5 {
+        font-size: 35px;
+        text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+    }
+}
+
+/* @media (max-width: 767px){
+    .card img{
+        height: 199.2px;
+        width: 516px;
+    }
+} */
+
+
+@media (max-width: 730px) {
+    .carousel-item h5 {
+        font-size: 28px;
+        text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+}
+
+@media (max-width:590px){
+    .presentacion h2{
+        font-size: 38px; 
+    }
+    
+    .presentacion h3{
+        font-size: 23px;
+
+    }
+    
+    .presentacion h4{
+        font-size: 23px;
+    }
+    
+    .formaciones h2{
+        font-size: 23px;
+    }
+    
+    .textocuatro h3{
+        font-size: 23px;
+    }
+}
+
+/* @media (max-width: 575px){
+    .card img{
+        height: 199.2px;
+        width: auto;
+    }
+} */
+
+
+@media (max-width: 555px) {
+    .carousel-item h5 {
+        font-size: 18px;
+        text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+}
+
+@media (max-width: 370px) {
+    header nav .logo{
+        font-size: 25px;
+    }
+
+    .carousel-item h5 {
+        font-size: 12px;
+        text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+}
+
