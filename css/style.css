@@ -37,7 +37,7 @@ header{
 
 header .navbar{
     background-color: #377771!important;
-    font-size: 25px;
+    font-size: 23px;
     z-index: 1000;
 }
 
@@ -50,15 +50,15 @@ header nav ul li{
 }
 
 .btn{
-    font-weight: 900;;
+    font-weight: 900;
 }
 
 
-nav .plataforma{
+/* nav .plataforma{
     font-size: 30px;
     border: 4px solid black;
     border-style: outset;
-}
+} */
 
 
 
@@ -130,7 +130,7 @@ nav .plataforma{
     text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
 }
 
-/******************                     CURSO                    *******************/
+/******************                     CURSOS                    *******************/
 
 .tarjetas{
 
@@ -185,7 +185,7 @@ nav .plataforma{
 
 /*!  FOOTER  */
 
-footer{
+/* footer{
     background-color: #377771;
 }
 
@@ -202,7 +202,7 @@ footer .logos{
     list-style: none;
     justify-content: space-around;
     padding: 30px 25px;
-}
+} */
 
 
 
@@ -245,8 +245,12 @@ footer .logos{
     }
 }
 @media (max-width: 1070px){
-    .acercadenosotros{
-        display: none !important;
+    .collapse .acercadenosotros{
+        /* display: none !important; */
+        padding-bottom: 20px !important;
+        a{
+            font-size: 40px;
+        }
     }
 }
 

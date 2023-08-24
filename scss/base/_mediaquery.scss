@@ -1,0 +1,255 @@
+@media (min-width: 1200px){
+    .tarjetas{
+        .conteiner{
+            .row{
+                .col{
+                    .card{
+                        img{
+                            width: 353.98px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sobrenos{
+        .formulario{
+            padding-top: 80px !important;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    h5{
+                        font-size: 45px;
+                        text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        .conteiner{
+            h3{
+                font-size: 50px !important;
+            }
+        }
+    }
+    .mision{
+        .mis{
+            div{
+                p{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .alumnos{
+        p{
+            font-size: 40px;
+        }
+    }
+    .sobrenos{
+        .formulario{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+// @media (max-width: 1070px){
+//     .acercadenosotros{
+//         display: none !important;
+//     }
+// }
+@media (max-width: 940px) {
+    header{
+        position:relative;
+        top: 0px;
+    }
+}
+@media (max-width: 940px) {
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    h5{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 845px){
+    .mision{
+        .mis{
+            div{
+                p{
+                    font-size: 29px;
+                }
+            }
+        }
+    }
+    .alumnos{
+        p{
+            font-size: 37px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .hero{
+        .conteiner{
+            h3{
+                font-size: 40px !important;
+            }
+        }
+    }
+    .alumnos{
+        .subb{
+            h3{
+                font-size: 54px;
+            }
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    h5{
+                        font-size: 28px;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:590px){
+    .presentacion{
+        div{
+            h2{
+                font-size: 38px; 
+            }
+            h3{
+                font-size: 23px;
+            }
+        }
+        h4{
+            font-size: 23px;
+        }
+    }
+    .formaciones{
+        h2{
+            font-size: 23px;
+        }
+        .textocuatro{
+            h3{
+                font-size: 23px;
+            }
+        }
+    }
+    .mis{
+        h2{
+            font-size: 49px !important;
+        }
+    }
+    .mision{
+        .mis{
+            div{
+                p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .alumnos{
+        p{
+            font-size: 32px;
+        }
+    }
+}
+@media (max-width: 555px) {
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    h5{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    .alumnos{
+        .subb{
+            h3{
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .hero{
+        .conteiner{
+            h3{
+                font-size: 35px !important;
+            }
+        }
+    }
+} 
+@media (max-width: 465px){
+    .mis{
+        h2{
+            font-size: 44px !important;
+        }
+    }
+    .mision{
+        .mis{
+            div{
+                p{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    .alumnos{
+        p{
+            font-size: 27px;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    header{
+        .navbar{
+            div{
+                .logo{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    h5{
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+    }
+
+}

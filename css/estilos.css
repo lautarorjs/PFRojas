@@ -1,0 +1,540 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.preguntas .gallery .gallery-item, .sobrenos .formulario .questions {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace !important; }
+  * h1, * h2, * h3, * h4, * h5 {
+    margin-bottom: 0rem;
+    color: #000000 !important; }
+    * h1 a, * h2 a, * h3 a, * h4 a, * h5 a {
+      text-decoration: none;
+      color: #000000 !important; }
+      * h1 a:hover, * h2 a:hover, * h3 a:hover, * h4 a:hover, * h5 a:hover {
+        color: #ffffff; }
+    * h1 ul, * h2 ul, * h3 ul, * h4 ul, * h5 ul {
+      list-style: none; }
+
+header {
+  position: sticky;
+  top: 0px; }
+  header .navbar {
+    background-color: #377771 !important;
+    font-size: 25px;
+    z-index: 1000; }
+    header .navbar div .logo {
+      font-size: 40px; }
+    header .navbar div .collapse ul li {
+      margin-inline: 35px; }
+    header .navbar div .collapse .btn {
+      font-weight: 900; }
+
+.presentacion {
+  z-index: -1;
+  width: 100%;
+  height: 130vh;
+  background: #377771;
+  background: linear-gradient(180deg, #377771 0%, black 60%);
+  position: relative; }
+  .presentacion div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%; }
+    .presentacion div h2 {
+      font-size: 48px;
+      font-weight: 400; }
+    .presentacion div h3 {
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center; }
+  .presentacion h4 {
+    height: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    color: white !important;
+    text-shadow: #CF5C36 1px 1px 1px;
+    background: linear-gradient(90deg, black, #CF5C36, black); }
+
+.hero {
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center; }
+  .hero .conteiner {
+    width: 70%;
+    position: absolute;
+    top: 250px; }
+    .hero .conteiner h3 {
+      width: 100%;
+      color: white !important;
+      font-size: 60px; }
+      .hero .conteiner h3 .conteiner-animation {
+        background: #CF5C36;
+        position: relative; }
+        .hero .conteiner h3 .conteiner-animation::after {
+          content: "";
+          border-left: 3px solid white;
+          background: black;
+          right: -30px;
+          width: 100%;
+          height: 105%;
+          bottom: 0px;
+          position: absolute;
+          animation: maquinaescribir 3s infinite alternate steps(17); }
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+
+.formaciones {
+  z-index: -1;
+  position: relative;
+  background: #377771;
+  background: linear-gradient(180deg, black 0%, #377771 95%); }
+  .formaciones h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: #CF5C36 1px 1px 1px;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    color: white !important; }
+  .formaciones .textocuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    .formaciones .textocuatro h3 {
+      height: 100%;
+      padding: 10px;
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      text-shadow: #377771 1px 1px 1px;
+      background: linear-gradient(90deg, black, #377771, black);
+      color: white !important; }
+
+.carousel .carousel-inner .carousel-item .img-fluid {
+  max-height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; }
+
+.carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 70px;
+  text-shadow: 12px 12px 20px black !important; }
+
+/******************                     CURSOS                    *******************/
+.tarjetas .conteiner .row .col .card {
+  height: 357.43px !important; }
+  .tarjetas .conteiner .row .col .card img {
+    height: 199.2px !important;
+    width: auto;
+    object-fit: cover; }
+
+/******************                ROBÓTICA Y PROGRAMACIÓN              *******************/
+.sectionone {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: #377771;
+  background: radial-gradient(rgba(0, 0, 0, 0.904) 0%, #377771 70%);
+  border-bottom: dotted 2px; }
+  .sectionone .introduccion {
+    height: 100%;
+    position: relative; }
+    .sectionone .introduccion h2 {
+      height: 20%;
+      position: relative;
+      font-size: 52px;
+      text-align: center;
+      top: 50px;
+      animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%; } }
+    .sectionone .introduccion .introduccionrobotica {
+      height: 50vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 20px; }
+      .sectionone .introduccion .introduccionrobotica iframe {
+        width: 50vw;
+        height: 100%; }
+      .sectionone .introduccion .introduccionrobotica p {
+        font-size: 30px;
+        color: black;
+        text-shadow: 1px 1px #000000a3;
+        background: linear-gradient(to right, #CF5C36, #377771); }
+    .sectionone .introduccion .subrob {
+      margin-top: 70px;
+      text-align: center; }
+
+.contenido {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #377771;
+  background: linear-gradient(180deg, #377771 0%, black 100%); }
+  .contenido .conocimientos {
+    padding-top: 90px;
+    text-align: center; }
+    .contenido .conocimientos h4 {
+      font-size: 60px;
+      text-align: center; }
+    .contenido .conocimientos .programa {
+      position: relative;
+      margin-top: 45px; }
+      .contenido .conocimientos .programa ul {
+        margin-top: 50px; }
+        .contenido .conocimientos .programa ul h5 {
+          text-align: center;
+          margin-top: 3px; }
+        .contenido .conocimientos .programa ul p {
+          text-align: center;
+          margin-top: 3px; }
+        .contenido .conocimientos .programa ul .unp {
+          color: rgba(255, 255, 255, 0.7); }
+        .contenido .conocimientos .programa ul .dosp {
+          color: rgba(255, 255, 255, 0.8); }
+        .contenido .conocimientos .programa ul .tresp {
+          color: rgba(255, 255, 255, 0.9); }
+        .contenido .conocimientos .programa ul .cuatrop {
+          color: white; }
+    .contenido .conocimientos h3 {
+      text-align: center;
+      font-size: 60px;
+      color: white !important;
+      margin-top: 170px;
+      text-shadow: #CF5C36 1px 1px 1px;
+      background: linear-gradient(90deg, black, #CF5C36, black);
+      height: 80px; }
+
+.alumnos {
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .alumnos p {
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    text-shadow: #cf5c3645 1px 1px 1px; }
+
+.preguntas {
+  width: 100%;
+  height: 180vh;
+  background: #377771;
+  background: linear-gradient(180deg, black 0%, #377771 95%);
+  z-index: -1; }
+  .preguntas .titulo {
+    text-align: center;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    height: 80px;
+    text-shadow: #CF5C36 1px 1px 1px; }
+    .preguntas .titulo h2 {
+      font-size: 60px;
+      color: white !important; }
+  .preguntas .proyect {
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 20px; }
+    .preguntas .proyect img {
+      height: 300px;
+      width: 500px;
+      border-radius: 15px; }
+    .preguntas .proyect p {
+      font-size: 34px; }
+    .preguntas .proyect .pone {
+      color: rgba(255, 255, 255, 0.901) !important; }
+    .preguntas .proyect .ptwo {
+      color: rgba(255, 255, 255, 0.784) !important; }
+    .preguntas .proyect .pthre {
+      color: black !important; }
+
+/******************                   Sobre Nosotros                   *******************/
+.mision {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #377771;
+  background: linear-gradient(180deg, #377771 0%, black 100%); }
+  .mision .mis {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px; }
+    .mision .mis h2 {
+      font-size: 60px;
+      margin-bottom: 20px; }
+      .mision .mis h2:hover {
+        font-size: 90px !important; }
+    .mision .mis div {
+      width: 75%; }
+      .mision .mis div p {
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.876);
+        text-shadow: 0.5px 1px 1px rgba(255, 255, 255, 0.188);
+        font-weight: 500;
+        text-align: center;
+        font-style: italic; }
+        .mision .mis div p span {
+          position: relative; }
+          .mision .mis div p span::after {
+            background-color: #cf5c36ec;
+            content: "";
+            width: 100%;
+            height: 75%;
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            z-index: -1; }
+
+.alumnos {
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  position: relative;
+  z-index: -1; }
+  .alumnos p {
+    font-size: 50px;
+    text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.67); }
+    .alumnos p span {
+      position: relative; }
+      .alumnos p span::after {
+        background-color: #cf5c36ec;
+        content: "";
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        z-index: -1; }
+  .alumnos .subb {
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    background: linear-gradient(90deg, black, #CF5C36, black);
+    height: 80px; }
+    .alumnos .subb h3 {
+      color: white !important;
+      font-size: 60px;
+      text-shadow: #CF5C36 1px 1px 1px; }
+
+.preguntas {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 180vh;
+  background: #377771;
+  background: linear-gradient(180deg, black 0%, #377771 95%); }
+  .preguntas .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 10px; }
+    .preguntas .gallery .gallery-item {
+      position: relative;
+      overflow: hidden;
+      max-height: 445px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      object-fit: contain; }
+      .preguntas .gallery .gallery-item .gallery-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/******************                   CONTACTO                   *******************/
+.sobrenos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #377771;
+  background: radial-gradient(rgba(0, 0, 0, 0.873) 0%, #377771 70%);
+  flex-wrap: wrap; }
+  .sobrenos .direccion {
+    text-align: center; }
+    .sobrenos .direccion .maps h2 {
+      font-size: 55px !important;
+      padding-bottom: 10px;
+      color: black !important;
+      text-shadow: 1px 1px 1px #CF5C36; }
+    .sobrenos .direccion .maps .mapa {
+      width: 600px;
+      height: 500px; }
+  .sobrenos .formulario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .sobrenos .formulario h2 {
+      font-size: 50px !important;
+      padding-bottom: 10px;
+      color: black !important;
+      text-shadow: 1px 1px 1px #CF5C36; }
+    .sobrenos .formulario .questions {
+      flex-direction: column; }
+      .sobrenos .formulario .questions div {
+        padding-top: 15px; }
+        .sobrenos .formulario .questions div label {
+          color: #000 !important;
+          font-size: 27px; }
+
+/******************                Ingreso Plataforma                *******************/
+.singin {
+  background-image: url(../images/nina-compu-biblioteca.jpg);
+  background-size: cover;
+  background-position: center; }
+  .singin .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.234);
+    /* Color de fondo translúcido */ }
+    .singin .container .login-form {
+      padding: 20px;
+      background-color: #ffffff95;
+      border-radius: 5px; }
+
+footer {
+  background-color: #377771; }
+  footer div p {
+    font-size: 120%;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px; }
+  footer .logos {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 30px 25px; }
+
+@media (min-width: 1200px) {
+  .tarjetas .conteiner .row .col .card img {
+    width: 353.98px; }
+  .sobrenos .formulario {
+    padding-top: 80px !important; } }
+
+@media (max-width: 1150px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 45px;
+    text-shadow: 12px 12px 20px black !important; }
+  .hero .conteiner h3 {
+    font-size: 50px !important; }
+  .mision .mis div p {
+    font-size: 32px; }
+  .alumnos p {
+    font-size: 40px; }
+  .sobrenos .formulario {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
+
+@media (max-width: 940px) {
+  header {
+    position: relative;
+    top: 0px; } }
+
+@media (max-width: 940px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 35px; } }
+
+@media (max-width: 845px) {
+  .mision .mis div p {
+    font-size: 29px; }
+  .alumnos p {
+    font-size: 37px; } }
+
+@media (max-width: 800px) {
+  .hero .conteiner h3 {
+    font-size: 40px !important; }
+  .alumnos .subb h3 {
+    font-size: 54px; } }
+
+@media (max-width: 730px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 28px; }
+  .carousel .carousel-inner .carousel-item .carousel-caption p {
+    display: none; } }
+
+@media (max-width: 590px) {
+  .presentacion div h2 {
+    font-size: 38px; }
+  .presentacion div h3 {
+    font-size: 23px; }
+  .presentacion h4 {
+    font-size: 23px; }
+  .formaciones h2 {
+    font-size: 23px; }
+  .formaciones .textocuatro h3 {
+    font-size: 23px; }
+  .mis h2 {
+    font-size: 49px !important; }
+  .mision .mis div p {
+    font-size: 25px; }
+  .alumnos p {
+    font-size: 32px; } }
+
+@media (max-width: 555px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 28px; }
+  .alumnos .subb h3 {
+    font-size: 40px; } }
+
+@media (max-width: 500px) {
+  .hero .conteiner h3 {
+    font-size: 35px !important; } }
+
+@media (max-width: 465px) {
+  .mis h2 {
+    font-size: 44px !important; }
+  .mision .mis div p {
+    font-size: 23px; }
+  .alumnos p {
+    font-size: 27px; } }
+
+@media (max-width: 370px) {
+  header .navbar div .logo {
+    font-size: 25px; }
+  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 19px; } }
