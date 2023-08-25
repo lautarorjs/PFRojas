@@ -163,33 +163,25 @@ header {
       position: relative;
       font-size: 52px;
       text-align: center;
-      top: 50px;
-      animation-name: slidein; }
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0%; } }
-    .sectionone .introduccion .introduccionrobotica {
-      height: 50vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      align-items: center;
-      padding: 20px; }
-      .sectionone .introduccion .introduccionrobotica iframe {
-        width: 50vw;
-        height: 100%; }
-      .sectionone .introduccion .introduccionrobotica p {
-        font-size: 30px;
-        color: black;
-        text-shadow: 1px 1px #000000a3;
-        background: linear-gradient(to right, #CF5C36, #377771); }
-    .sectionone .introduccion .subrob {
-      margin-top: 70px;
-      text-align: center; }
+      top: 50px; }
+  .sectionone .introduccionrobotica {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 20px; }
+    .sectionone .introduccionrobotica iframe {
+      width: 50vw;
+      height: 100%; }
+    .sectionone .introduccionrobotica p {
+      font-size: 30px;
+      color: black;
+      text-shadow: 1px 1px #000000a3;
+      background: linear-gradient(to right, #CF5C36, #377771); }
+  .sectionone .subrob {
+    margin-top: 70px;
+    text-align: center; }
 
 .contenido {
   z-index: -1;
@@ -227,10 +219,10 @@ header {
       text-align: center;
       font-size: 60px;
       color: white !important;
-      margin-top: 170px;
       text-shadow: #CF5C36 1px 1px 1px;
       background: linear-gradient(90deg, black, #CF5C36, black);
-      height: 80px; }
+      height: 80px;
+      width: 100%; }
 
 .alumnos {
   width: 100%;
@@ -243,7 +235,6 @@ header {
   .alumnos p {
     font-size: 30px;
     text-align: center;
-    width: 80%;
     color: white;
     text-shadow: #cf5c3645 1px 1px 1px; }
 
@@ -262,7 +253,7 @@ header {
       font-size: 60px;
       color: white !important; }
   .preguntas .proyect {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100%;
     height: 400px;
     display: grid;
@@ -271,9 +262,12 @@ header {
     align-items: center;
     padding: 20px; }
     .preguntas .proyect img {
-      height: 300px;
-      width: 500px;
+      height: 330px;
+      width: 600px;
       border-radius: 15px; }
+    .preguntas .proyect iframe {
+      height: 300px;
+      width: 560px; }
     .preguntas .proyect p {
       font-size: 34px; }
     .preguntas .proyect .pone {
@@ -450,13 +444,29 @@ footer {
     justify-content: space-around;
     padding: 30px 25px; }
 
+@media (max-width: 1531px) {
+  .preguntas .proyect {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    padding: 20px; }
+    .preguntas .proyect img {
+      height: 430px;
+      width: 600px;
+      border-radius: 15px; }
+    .preguntas .proyect p {
+      font-size: 39px; } }
+
 @media (min-width: 1200px) {
   .tarjetas .conteiner .row .col .card img {
     width: 353.98px; }
   .sobrenos .formulario {
-    padding-top: 80px !important; } }
+    padding-top: 80px !important; }
+  .contenido .conocimientos h3 {
+    font-size: 50px;
+    margin-top: 0px !important; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 1190px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 45px;
     text-shadow: 12px 12px 20px black !important; }
@@ -465,10 +475,32 @@ footer {
   .mision .mis div p {
     font-size: 32px; }
   .alumnos p {
-    font-size: 40px; }
+    font-size: 30px; }
   .sobrenos .formulario {
     padding-top: 30px;
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .preguntas .proyect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: auto; }
+    .preguntas .proyect img {
+      height: 430px;
+      width: 530px; }
+    .preguntas .proyect p {
+      font-size: 28px; } }
+
+@media (max-width: 990px) {
+  .preguntas .titulo h2 {
+    font-size: 52px; }
+  .preguntas .proyect {
+    margin-top: 0px; }
+    .preguntas .proyect img {
+      height: 320px;
+      width: 480px; }
+    .preguntas .proyect p {
+      font-size: 32px; } }
 
 @media (max-width: 940px) {
   header {
@@ -477,13 +509,42 @@ footer {
 
 @media (max-width: 940px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 35px; } }
+    font-size: 35px; }
+  .alumnos p {
+    font-size: 36px; }
+  .preguntas .proyect {
+    margin-top: 30px; }
+    .preguntas .proyect img {
+      width: 430px; }
+    .preguntas .proyect p {
+      font-size: 27px; } }
 
 @media (max-width: 845px) {
+  .sectionone .introduccion .introduccionrobotica {
+    display: flex;
+    flex-direction: column;
+    height: 70vh; }
+    .sectionone .introduccion .introduccionrobotica iframe {
+      width: 80vw;
+      height: 800px !important; }
+    .sectionone .introduccion .introduccionrobotica p {
+      font-size: 24px; }
+  .sectionone .introduccion .subrob {
+    margin-top: 0px;
+    text-align: center; }
+  .alumnos p {
+    font-size: 32px !important; }
+  .preguntas .titulo h2 {
+    font-size: 53px; }
+  .preguntas .proyect img {
+    height: 300px;
+    width: 400px; }
+  .preguntas .proyect p {
+    font-size: 28px; }
   .mision .mis div p {
     font-size: 29px; }
   .alumnos p {
-    font-size: 37px; } }
+    font-size: 37px !important; } }
 
 @media (max-width: 800px) {
   .hero .conteiner h3 {
@@ -491,11 +552,46 @@ footer {
   .alumnos .subb h3 {
     font-size: 54px; } }
 
+@media (max-width: 735px) {
+  .preguntas .titulo h2 {
+    font-size: 50px; }
+  .preguntas .proyect img {
+    height: 300px;
+    width: 350px; }
+  .preguntas .proyect p {
+    font-size: 26px; } }
+
 @media (max-width: 730px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 28px; }
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    display: none; } }
+    display: none; }
+  .preguntas .titulo {
+    height: 64px; }
+    .preguntas .titulo h2 {
+      font-size: 40px; } }
+
+@media (max-width: 691px) {
+  .preguntas .proyect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    height: auto;
+    margin-top: 0px; }
+    .preguntas .proyect img {
+      height: 260px;
+      width: 80vw; }
+    .preguntas .proyect p {
+      width: 80vw;
+      text-align: center;
+      font-size: 20px; }
+  .alumnos p {
+    font-size: 30px !important; }
+  .preguntas .proyect iframe {
+    height: 250px;
+    width: 100%; } }
 
 @media (max-width: 590px) {
   .presentacion div h2 {
@@ -513,28 +609,47 @@ footer {
   .mision .mis div p {
     font-size: 25px; }
   .alumnos p {
-    font-size: 32px; } }
+    font-size: 28px !important; }
+  .preguntas .titulo {
+    height: 50px; }
+    .preguntas .titulo h2 {
+      font-size: 35px; } }
 
 @media (max-width: 555px) {
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 28px; }
   .alumnos .subb h3 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .alumnos p {
+    font-size: 26px !important; }
+  .preguntas .proyect img {
+    height: 250px;
+    width: 85vw; }
+  .preguntas .proyect p {
+    font-size: 19px; } }
 
 @media (max-width: 500px) {
   .hero .conteiner h3 {
-    font-size: 35px !important; } }
+    font-size: 35px !important; }
+  .preguntas .titulo h2 {
+    font-size: 30px; } }
 
 @media (max-width: 465px) {
   .mis h2 {
     font-size: 44px !important; }
   .mision .mis div p {
     font-size: 23px; }
-  .alumnos p {
-    font-size: 27px; } }
+  .preguntas .titulo {
+    height: 40px; }
+    .preguntas .titulo h2 {
+      font-size: 25px; }
+  .preguntas .proyect p {
+    font-size: 18px; } }
 
 @media (max-width: 370px) {
   header .navbar div .logo {
     font-size: 25px; }
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 19px; } }
+    font-size: 19px; }
+  .alumnos p {
+    font-size: 25px !important; } }
