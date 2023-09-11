@@ -1,14 +1,38 @@
-@media (max-width:1531px){
+@media (max-width:1700px){
     .preguntas{
         .proyect{
-            margin-top: 30px;
-            width: 100%;
-            height: 500px;
-            padding: 20px;
             img{
                 height: 430px;
-                width: 600px;
+                width: 790px;
                 border-radius: 15px;
+            }
+            p{
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width:1450px){
+    .preguntas{
+        .proyect{
+            img{
+                height: 430px;
+                width: 690px;
+            }
+            p{
+                font-size: 40px;
+            }
+        }
+    }
+} 
+
+@media (max-width:1330px){
+    .preguntas{
+        .proyect{
+            img{
+                height: 430px;
+                width: 640px;
             }
             p{
                 font-size: 39px;
@@ -16,7 +40,6 @@
         }
     }
 }
-
 
 @media (min-width: 1200px){
     .tarjetas{
@@ -47,6 +70,7 @@
         }
     }
 }
+
 @media (max-width: 1190px) {
     .carousel{
         .carousel-inner{
@@ -89,27 +113,34 @@
     }
     .preguntas{
         .proyect{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            height: auto;
+
             img{
                 height: 430px;
-                width: 530px;
+                width: 600px;
             }
             p{
-                font-size: 28px;
+                font-size: 38px;
             }
         }
     }
 }
-// @media (max-width: 1070px){
-//     .acercadenosotros{
-//         display: none !important;
-//     }
-// }
-@media (max-width:990px){
+
+@media (max-width: 1118px){
+    .preguntas{
+        .proyect{
+            margin-top: 0px;
+            img{
+                height: 400px;
+                width: 560px;
+            }
+            p{
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px){
     .preguntas{
         .titulo{
             h2{
@@ -117,6 +148,9 @@
             }
         }
         .proyect{
+            height: 450px;
+            padding-top: 0px;
+            padding-bottom: 0px;
             margin-top: 0px;
             img{
                 height: 320px;
@@ -134,8 +168,6 @@
         position:relative;
         top: 0px;
     }
-}
-@media (max-width: 940px) {
     .carousel{
         .carousel-inner{
             .carousel-item{
@@ -154,12 +186,11 @@
     }
     .preguntas{
         .proyect{
-            margin-top: 30px;
             img{
-                width: 430px;
+                width: 460px;
             }
             p{
-                font-size: 27px;
+                font-size: 30px;
             }
         }
     }
@@ -198,6 +229,7 @@
             }
         }
         .proyect{
+            height: 400px;
             img{
                 height: 300px;
                 width: 400px;
@@ -224,6 +256,14 @@
 }
 
 @media (max-width: 800px){
+    .presentacion{
+        height: 90vh;
+        img{
+            height: 60%;
+            margin-top: 5px;
+        }
+    }
+
     .hero{
         .conteiner{
             h3{
@@ -285,15 +325,22 @@
 }
 
 @media (max-width: 691px){
+    .presentacion{
+        height: 80vh;
+    }
+
     .preguntas{
         .proyect{
+            padding-top: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             gap: 0px;
             height: auto;
-            margin-top: 0px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            
             img{
                 height: 260px;
                 width: 80vw;
@@ -301,7 +348,7 @@
             p{
                 width: 80vw;
                 text-align: center;
-                font-size: 20px;
+                font-size: 22px;
             }
         }
     }
@@ -374,6 +421,10 @@
 }
 
 @media (max-width: 555px) {
+    .presentacion{
+        height: 65vh;
+    }
+
     .carousel{
         .carousel-inner{
             .carousel-item{
@@ -385,6 +436,15 @@
             }
         }
     }
+
+    .sectionone{
+        .introduccion{
+            h2{
+                font-size: 45px;
+            }
+        }
+    }
+
     .alumnos{
         .subb{
             h3{
@@ -404,14 +464,19 @@
                 width: 85vw;
             }
             p{
-                font-size: 19px;
+                font-size: 22px;
             }
         }
     }
 }
 
 @media (max-width: 500px){
+    .presentacion{
+        height: 60vh;
+    }
+
     .hero{
+        height: 100vh;
         .conteiner{
             h3{
                 font-size: 35px !important;
@@ -427,6 +492,20 @@
     }
 } 
 @media (max-width: 465px){
+    .presentacion{
+        img{
+            margin-top: 10px;
+        }
+    }
+
+    .sectionone{
+        .introduccion{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+
     .mis{
         h2{
             font-size: 44px !important;
@@ -448,11 +527,25 @@
                 font-size: 25px;
             }
         }
-    }
-    .preguntas{
         .proyect{
             p{
-                font-size: 18px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 398px){
+    .preguntas{
+        .titulo{
+            height: 40px;
+            h2{
+                font-size: 25px;
+            }
+        }
+        .proyect{
+            p{
+                font-size: 22px;
             }
         }
     }

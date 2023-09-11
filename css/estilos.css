@@ -51,6 +51,7 @@ header {
       font-size: 48px;
       font-weight: 400; }
     .presentacion div h3 {
+      width: 90%;
       font-size: 30px;
       font-weight: 400;
       text-align: center; }
@@ -87,8 +88,8 @@ header {
           content: "";
           border-left: 3px solid white;
           background: black;
-          right: -30px;
-          width: 100%;
+          right: -23px;
+          width: 80%;
           height: 105%;
           bottom: 0px;
           position: absolute;
@@ -98,7 +99,7 @@ header {
   from {
     width: 100%; }
   to {
-    width: 0; } }
+    width: 4.8%; } }
 
 .formaciones {
   z-index: -1;
@@ -109,23 +110,20 @@ header {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
+    padding: 5px;
     text-shadow: #CF5C36 1px 1px 1px;
     background: linear-gradient(90deg, black, #CF5C36, black);
     color: white !important; }
   .formaciones .textocuatro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
+    background: linear-gradient(90deg, black, #377771, black); }
     .formaciones .textocuatro h3 {
+      text-align: center;
       height: 100%;
-      padding: 10px;
+      padding: 5px;
       font-size: 30px;
       font-weight: 400;
-      text-align: center;
-      text-shadow: #377771 1px 1px 1px;
-      background: linear-gradient(90deg, black, #377771, black);
-      color: white !important; }
+      color: white !important;
+      text-shadow: #377771 1px 1px 1px; }
 
 .carousel .carousel-inner .carousel-item .img-fluid {
   max-height: 100vh;
@@ -137,14 +135,6 @@ header {
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-size: 70px;
   text-shadow: 12px 12px 20px black !important; }
-
-/******************                     CURSOS                    *******************/
-.tarjetas .conteiner .row .col .card {
-  height: 357.43px !important; }
-  .tarjetas .conteiner .row .col .card img {
-    height: 199.2px !important;
-    width: auto;
-    object-fit: cover; }
 
 /******************                ROBÓTICA Y PROGRAMACIÓN              *******************/
 .sectionone {
@@ -233,6 +223,7 @@ header {
   justify-content: space-around;
   align-items: center; }
   .alumnos p {
+    width: 90%;
     font-size: 30px;
     text-align: center;
     color: white;
@@ -240,7 +231,7 @@ header {
 
 .preguntas {
   width: 100%;
-  height: 180vh;
+  height: auto !important;
   background: #377771;
   background: linear-gradient(180deg, black 0%, #377771 95%);
   z-index: -1; }
@@ -253,9 +244,8 @@ header {
       font-size: 60px;
       color: white !important; }
   .preguntas .proyect {
+    position: relative;
     margin-top: 30px;
-    width: 100%;
-    height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -359,21 +349,19 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    max-width: 95vw;
+    width: 95vw;
     margin: 0 auto;
     padding: 10px; }
     .preguntas .gallery .gallery-item {
+      align-items: normal !important;
       position: relative;
       overflow: hidden;
-      max-height: 445px;
-      width: 100%;
+      height: 445px;
       border: 1px solid #ccc;
       border-radius: 10px;
       object-fit: contain; }
       .preguntas .gallery .gallery-item .gallery-item img {
         display: block;
-        width: 100%;
-        height: 100%;
         object-fit: cover; }
 
 /******************                   CONTACTO                   *******************/
@@ -444,18 +432,27 @@ footer {
     justify-content: space-around;
     padding: 30px 25px; }
 
-@media (max-width: 1531px) {
-  .preguntas .proyect {
-    margin-top: 30px;
-    width: 100%;
-    height: 500px;
-    padding: 20px; }
-    .preguntas .proyect img {
-      height: 430px;
-      width: 600px;
-      border-radius: 15px; }
-    .preguntas .proyect p {
-      font-size: 39px; } }
+@media (max-width: 1700px) {
+  .preguntas .proyect img {
+    height: 430px;
+    width: 790px;
+    border-radius: 15px; }
+  .preguntas .proyect p {
+    font-size: 50px; } }
+
+@media (max-width: 1450px) {
+  .preguntas .proyect img {
+    height: 430px;
+    width: 690px; }
+  .preguntas .proyect p {
+    font-size: 40px; } }
+
+@media (max-width: 1330px) {
+  .preguntas .proyect img {
+    height: 430px;
+    width: 640px; }
+  .preguntas .proyect p {
+    font-size: 39px; } }
 
 @media (min-width: 1200px) {
   .tarjetas .conteiner .row .col .card img {
@@ -479,22 +476,28 @@ footer {
   .sobrenos .formulario {
     padding-top: 30px;
     padding-bottom: 30px; }
+  .preguntas .proyect img {
+    height: 430px;
+    width: 600px; }
+  .preguntas .proyect p {
+    font-size: 38px; } }
+
+@media (max-width: 1118px) {
   .preguntas .proyect {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    height: auto; }
+    margin-top: 0px; }
     .preguntas .proyect img {
-      height: 430px;
-      width: 530px; }
+      height: 400px;
+      width: 560px; }
     .preguntas .proyect p {
-      font-size: 28px; } }
+      font-size: 36px; } }
 
 @media (max-width: 990px) {
   .preguntas .titulo h2 {
     font-size: 52px; }
   .preguntas .proyect {
+    height: 450px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-top: 0px; }
     .preguntas .proyect img {
       height: 320px;
@@ -505,19 +508,15 @@ footer {
 @media (max-width: 940px) {
   header {
     position: relative;
-    top: 0px; } }
-
-@media (max-width: 940px) {
+    top: 0px; }
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 35px; }
   .alumnos p {
     font-size: 36px; }
-  .preguntas .proyect {
-    margin-top: 30px; }
-    .preguntas .proyect img {
-      width: 430px; }
-    .preguntas .proyect p {
-      font-size: 27px; } }
+  .preguntas .proyect img {
+    width: 460px; }
+  .preguntas .proyect p {
+    font-size: 30px; } }
 
 @media (max-width: 845px) {
   .sectionone .introduccion .introduccionrobotica {
@@ -536,17 +535,24 @@ footer {
     font-size: 32px !important; }
   .preguntas .titulo h2 {
     font-size: 53px; }
-  .preguntas .proyect img {
-    height: 300px;
-    width: 400px; }
-  .preguntas .proyect p {
-    font-size: 28px; }
+  .preguntas .proyect {
+    height: 400px; }
+    .preguntas .proyect img {
+      height: 300px;
+      width: 400px; }
+    .preguntas .proyect p {
+      font-size: 28px; }
   .mision .mis div p {
     font-size: 29px; }
   .alumnos p {
     font-size: 37px !important; } }
 
 @media (max-width: 800px) {
+  .presentacion {
+    height: 90vh; }
+    .presentacion img {
+      height: 60%;
+      margin-top: 5px; }
   .hero .conteiner h3 {
     font-size: 40px !important; }
   .alumnos .subb h3 {
@@ -572,21 +578,25 @@ footer {
       font-size: 40px; } }
 
 @media (max-width: 691px) {
+  .presentacion {
+    height: 80vh; }
   .preguntas .proyect {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 0px;
     height: auto;
-    margin-top: 0px; }
+    margin-top: 10px;
+    padding-bottom: 10px; }
     .preguntas .proyect img {
       height: 260px;
       width: 80vw; }
     .preguntas .proyect p {
       width: 80vw;
       text-align: center;
-      font-size: 20px; }
+      font-size: 22px; }
   .alumnos p {
     font-size: 30px !important; }
   .preguntas .proyect iframe {
@@ -616,8 +626,12 @@ footer {
       font-size: 35px; } }
 
 @media (max-width: 555px) {
+  .presentacion {
+    height: 65vh; }
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 28px; }
+  .sectionone .introduccion h2 {
+    font-size: 45px; }
   .alumnos .subb h3 {
     font-size: 40px; }
   .alumnos p {
@@ -626,15 +640,23 @@ footer {
     height: 250px;
     width: 85vw; }
   .preguntas .proyect p {
-    font-size: 19px; } }
+    font-size: 22px; } }
 
 @media (max-width: 500px) {
-  .hero .conteiner h3 {
-    font-size: 35px !important; }
+  .presentacion {
+    height: 60vh; }
+  .hero {
+    height: 100vh; }
+    .hero .conteiner h3 {
+      font-size: 35px !important; }
   .preguntas .titulo h2 {
     font-size: 30px; } }
 
 @media (max-width: 465px) {
+  .presentacion img {
+    margin-top: 10px; }
+  .sectionone .introduccion h2 {
+    font-size: 40px; }
   .mis h2 {
     font-size: 44px !important; }
   .mision .mis div p {
@@ -644,7 +666,15 @@ footer {
     .preguntas .titulo h2 {
       font-size: 25px; }
   .preguntas .proyect p {
-    font-size: 18px; } }
+    font-size: 22px; } }
+
+@media (max-width: 398px) {
+  .preguntas .titulo {
+    height: 40px; }
+    .preguntas .titulo h2 {
+      font-size: 25px; }
+  .preguntas .proyect p {
+    font-size: 22px; } }
 
 @media (max-width: 370px) {
   header .navbar div .logo {
