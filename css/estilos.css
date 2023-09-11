@@ -503,7 +503,9 @@ footer {
       height: 320px;
       width: 480px; }
     .preguntas .proyect p {
-      font-size: 32px; } }
+      font-size: 32px; }
+  .preguntas .gallery {
+    grid-template-columns: 90vw; } }
 
 @media (max-width: 940px) {
   header {
