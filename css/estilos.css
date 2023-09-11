@@ -47,7 +47,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1%; }
-    .presentacion div h2 {
+    .presentacion div h1 {
       font-size: 48px;
       font-weight: 400; }
     .presentacion div h3 {
@@ -148,7 +148,7 @@ header {
   .sectionone .introduccion {
     height: 100%;
     position: relative; }
-    .sectionone .introduccion h2 {
+    .sectionone .introduccion h1 {
       height: 20%;
       position: relative;
       font-size: 52px;
@@ -281,10 +281,10 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 70px; }
-    .mision .mis h2 {
+    .mision .mis h1 {
       font-size: 60px;
       margin-bottom: 20px; }
-      .mision .mis h2:hover {
+      .mision .mis h1:hover {
         font-size: 90px !important; }
     .mision .mis div {
       width: 75%; }
@@ -606,7 +606,7 @@ footer {
     width: 100%; } }
 
 @media (max-width: 590px) {
-  .presentacion div h2 {
+  .presentacion div h1 {
     font-size: 38px; }
   .presentacion div h3 {
     font-size: 23px; }
@@ -632,7 +632,7 @@ footer {
     height: 65vh; }
   .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 28px; }
-  .sectionone .introduccion h2 {
+  .sectionone .introduccion h1 {
     font-size: 45px; }
   .alumnos .subb h3 {
     font-size: 40px; }
@@ -657,7 +657,7 @@ footer {
 @media (max-width: 465px) {
   .presentacion img {
     margin-top: 10px; }
-  .sectionone .introduccion h2 {
+  .sectionone .introduccion h1 {
     font-size: 40px; }
   .mis h2 {
     font-size: 44px !important; }

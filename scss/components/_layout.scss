@@ -10,7 +10,7 @@
         flex-direction: column;
         align-items: center;
         padding: 1%;
-        h2{
+        h1{
             font-size: 48px;
             font-weight: 400;  
         }
@@ -138,7 +138,7 @@
     .introduccion{
         height: 100%;
         position: relative;
-        h2{
+        h1{
             height: 20%;
             position: relative;
             font-size: 52px;
@@ -303,7 +303,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 70px;
-        h2{
+        h1{
             font-size: 60px;
             margin-bottom: 20px;
             &:hover{
