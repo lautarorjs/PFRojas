@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="body">
+    <header class="headerPlataform">
+        <nav class="container navbar">
+            <div class="logos">
+                <a class="logoo" href="../index.html">Escuela de Robótica</a>
+                <p class="desaweb">Curso de Desarrollo Web</p>
+            </div>
+        </nav>
+    </header>
+    <main class="gridConteiner">
+        <div class="navbarPlataform">
+            <div class="a">
+                <a href="#" onclick="mostrarVideo('https://www.youtube.com/embed/T4t00Hd3qZc?si=ZPylBShuEI-O3bGS', '1')" id="video1" onclick>Clase 1: Instalación de Visual Studio Code</a>
+                <input type="checkbox" class="checkbox" id="check1">
+            </div>
+            <div class="a">
+                <a href="#" onclick="mostrarVideo('https://www.youtube.com/embed/loH-aD95buY?si=YhMRT6umKTT8G3PK', '2')" id="video2">Clase 2: Textos, imagenes y iframes</a>
+                <input type="checkbox" class="checkbox" id="check2">
+            </div>
+            <div class="a">
+                <a href="#" onclick="mostrarVideo('https://www.youtube.com/embed/9v02UXMJfmQ?si=Q0PnJQsUvHzULDfl', '3')" id="video3">Clase 3: Colores, tamaños, posicionamientos</a>
+                <input type="checkbox" class="checkbox" id="check3">
+            </div>
+        </div>
+        <div class="mainPlataform">
+            <p class="progreso">Progreso</p>
+            <div class="progress">
+                <div class="progressBar" id="progressBar"></div>
+            </div>
+            <iframe id="videoFrame" width="86%" height="70%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+crossorigin="anonymous"></script>
+<script src="../js/plataforma.js"></script>
+</html>

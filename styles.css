@@ -1,0 +1,481 @@
+/* Colores */
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-primary: #377771;
+    --color-background: #f5f5f5;
+    --color-text: #CF5C36;
+}
+
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch';
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* Header */
+.headerIndex {
+    padding-top: 7px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    background-color: transparent;
+    transition: 0.35s;
+}
+
+.abajo {
+    background-color: var(--color-primary);
+    padding: 3px 2px;
+}
+
+.navbar {
+    z-index: 1000;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+.container a:hover {
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled {
+    background-color: var(--color-primary);
+}
+
+header .container a {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container p{
+    color: #000000;
+    /* display: inline-block; */
+    font-size: 1.4rem;
+    /* padding-top: 1.5rem; */
+}
+
+.botton {
+    border: 2.5px solid var(--color-black);
+    border-radius: 0.7rem;
+}
+
+.botton a {
+    padding: 0px 10px;
+    font-size: 1.5rem !important;
+}
+
+.botton:hover {
+    border: 1.7px solid #CF5C36;
+    background-color: #CF5C36;
+}
+
+.botton a:hover {
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.653);
+}
+
+/* WhatsApp Icon */
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+/* Hero */
+.hero {
+    height: 120vh;
+    background-image: url(./images/nino-leyendo-arbol-contraste.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position-y: 0rem;
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    width: 40%;
+    right: 10%;
+    top: 18.5%;
+}
+
+.content div p{
+    font-size: 1.6rem;
+}
+
+.htmlcss {
+    display: flex;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.dW {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dW h2 {
+    position: absolute;
+    font-size: 4rem;
+    text-shadow: var(--color-primary) 2px 2px;
+    color: var(--color-white);
+    bottom: -200px;
+}
+
+/* Desarrollo Web */
+.desarrolloWeb {
+    height: 110vh;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+}
+
+.iframe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iframe iframe {
+    width: 80%;
+    height: 65%;
+}
+
+/* Beneficios del Curso */
+.beneficios {
+    background: linear-gradient(180deg, var(--color-black), var(--color-primary) 100%);    padding: 50px 0;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.beneficios h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.beneficios ul {
+    margin-top: 20px;
+    list-style: disc;
+}
+
+.beneficios li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    list-style: inside;
+}
+
+/* Edades */
+
+.edades {
+    background: linear-gradient(180deg, var(--color-primary), var(--color-black) 100%);    padding: 50px 0;
+    text-align: center;
+    color: var(--color-white);
+    padding-bottom: 5rem;
+}
+
+.container{
+    color: var(--color-white);
+    width: 100%;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 4rem;
+}
+
+.container ul li{
+    font-size: 2rem;
+    list-style: inside;
+}
+
+.container ul li span{
+    font-size: 2.6rem;
+    color: var(--color-text);
+    text-shadow: var(--color-white) 0.2px 0.3px 1px;
+}
+
+/* Costos */
+.costos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-black) 0%, var(--color-primary) 100%);
+    padding-top: 18px;
+}
+
+.group{
+    display: flex;
+    padding-top: 2.5rem;
+    width: 91%;
+}
+
+
+.group img{
+    border-radius: 1.4rem;
+    image-resolution: ;
+}
+
+.costos h2 {
+    color: var(--color-white);
+    font-size: 4rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.product h3{
+    color: var(--color-white);
+    font-size: 2.5rem;
+}
+
+
+.product p {
+    color: var(--color-white);
+    width: 60%;
+    font-size: 30px;
+}
+
+/* Inscripción */
+.inscripcion {
+    background-color: var(--color-primary);
+    padding: 50px 0;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.inscripcion h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.inscripcion p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+/* Maps */
+.maps {
+    z-index: -1;
+    position: relative;
+    height: min-content;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-black) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maps h2 {
+    padding-top: 1rem;
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--color-white);
+}
+
+.maps iframe {
+    width: 80%;
+    padding-top: 4rem;
+    padding-bottom: 15rem;
+}
+
+/* Footer */
+footer {
+    height: 40vh;
+    background-color: var(--color-black);
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.cursos h2 {
+    font-size: 4rem;
+}
+
+.cursos a {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+/* Ingreso Plataforma */
+.singin{
+    background-image: url(../images/nina-compu-biblioteca.jpg);
+    background-size: cover;
+    background-position: center;
+    .conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.234); /* Color de fondo translúcido */
+        .login-form {
+            padding: 20px;
+            background-color: #ffffff95;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+/* Plataforma */
+
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.html {
+    height: 100%;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 8px;
+    height: 100%;
+    margin: 0;
+    border-bottom: 0.01px solid black;
+}
+
+.gridConteiner {
+    display: grid;
+    grid-template-columns: 19% auto;
+    grid-template-rows: 100%;
+    grid-template-areas: "navbar main";
+    height: 100%;
+}
+
+.headerPlataform {
+    grid-area: header;
+    position: relative;
+}
+
+.navbarPlataform {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.navbarPlataform .a {
+    border-bottom: 1px solid white;
+    height: 17%;
+    padding: 2rem;
+    font-size: 1.75rem;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.navbarPlataform .a a{
+    color:white;
+}
+
+.navbarPlataform .a .checkbox {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 1rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 9rem solid #CF5C36;
+}
+
+
+
+.navbarPlataform .a:hover {
+    background-color: rgba(255, 255, 255, 0.234);
+}
+
+.navbarPlataform .a .video{
+    text-decoration: underline;
+}
+
+
+.mainPlataform {
+    grid-area: main;
+    height: 100%;
+    position: relative;
+    background: radial-gradient(rgba(0, 0, 0, 0.904) 0%, rgba(55, 119, 113, 1) 70%);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainPlataform iframe {
+    margin: 0;
+    position: relative;
+    bottom: 4%;
+}
+
+/* Progress Bar */
+
+.progreso{
+    position: relative;
+    bottom: 8%;
+    font-size: 2rem;
+}
+
+.progress {
+    width: 60%;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    bottom: 7%;
+}
+
+.progressBar{
+    background-color: #CF5C36;
+    width: 0%;
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+}
+
