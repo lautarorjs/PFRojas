@@ -1,5 +1,40 @@
-document.addEventListener("DOMContentLoaded", function() {
+let opciones = {};
 
+document.addEventListener("DOMContentLoaded", function() {
+    let ultimaFechaCita = localStorage.getItem('ultimaFechaCita');
+
+    if (!ultimaFechaCita || !esMismoDia(new Date(ultimaFechaCita), new Date())) {
+        obtenerCitaDiaria();
+    }
+    function esMismoDia(fecha1, fecha2) {
+        return fecha1.getDate() === fecha2.getDate() &&
+            fecha1.getMonth() === fecha2.getMonth() &&
+            fecha1.getFullYear() === fecha2.getFullYear();
+    }
+    function mostrarCitaEnInterfaz(cita) {
+        const citaElemento = document.getElementById('cita');
+        if (citaElemento) {
+            citaElemento.innerHTML = `
+                <div class="citaDiaria">
+                    <h2>Autor: ${cita.author}</h2>
+                    <p>${cita.content}</p>
+                </div>
+            `;
+        }
+    }
+    function obtenerCitaDiaria() {
+        fetch('https://api.quotable.io/random?language=es')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                const cita = data;
+                mostrarCitaEnInterfaz(cita);
+                guardarEstado({ ultimaFechaCita: new Date() });
+            })
+            .catch(error => {
+                console.error('Error al obtener la cita desde la API:', error);
+            });
+    }
     const estadoGuardado = localStorage.getItem('estadoEstudiante');
 
     if (estadoGuardado) {
@@ -12,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const videoSeleccionado = estadoEstudiante.videoSeleccionado || 'https://www.youtube.com/embed/T4t00Hd3qZc?si=ZPylBShuEI-O3bGS';
         mostrarVideo(videoSeleccionado);
     } else {
-        // Si no hay estado guardado, mostrar el primer video por defecto
         mostrarVideo('https://www.youtube.com/embed/T4t00Hd3qZc?si=ZPylBShuEI-O3bGS');
         calcularProgreso();
     }
@@ -81,7 +115,6 @@ let check1 = document.getElementById("check1"),
                 progreso += 1 / 3;
                 check1.disabled = true;
                 check2.disabled = true;
-                // Mostrar mensaje cuando se completa el curso
                 Swal.fire({
                     title: 'Felicitaciones',
                     text: 'Has completado satisfactoriamente el módulo Online del Curso de Desarrollo Web. Nos vemos en la 2da clase!',
