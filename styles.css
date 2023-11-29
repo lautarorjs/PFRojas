@@ -122,6 +122,7 @@ header .contenido p{
 
 .content div p{
     font-size: 1.6rem;
+    margin-bottom: 0.4rem;
 }
 
 .htmlcss {
@@ -711,7 +712,6 @@ footer {
     }
     .htmlcss {
         display: flex;
-        padding-top: 1rem;
     }
 }
 @media screen and (max-width:500px){
@@ -747,7 +747,6 @@ footer {
     }
     .htmlcss {
         display: flex;
-        padding-top: 0.7rem;
     }
 }
 @media screen and (max-width: 376px){
