@@ -189,6 +189,9 @@ h1 {
 .beneficios h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    background: linear-gradient(90deg,black,#CF5C36,black);
+    width: 100%;
+    border-radius: 2rem;
 }
 
 .beneficios ul {
@@ -233,6 +236,9 @@ h1 {
 
 .container h2{
     font-size: 4rem;
+    background: linear-gradient(90deg,black,#CF5C36,black);
+    width: 100%;
+    border-radius: 2rem;
 }
 
 .container ul li{
@@ -272,6 +278,10 @@ h1 {
 .costos h2 {
     color: var(--color-white);
     font-size: 4rem;
+    background: linear-gradient(90deg,black,#CF5C36,black);
+    width: 100%;
+    border-radius: 2rem;
+    width: 80%;
 }
 
 .costos p {
@@ -331,6 +341,9 @@ h1 {
     font-size: 4rem;
     margin-bottom: 20px;
     color: var(--color-white);
+    background: linear-gradient(90deg,black,#CF5C36,black);
+    width: 100%;
+    border-radius: 2rem;
 }
 
 .inscripcion p {
@@ -366,10 +379,13 @@ h1 {
 }
 
 .galeria h2 {
-    padding-bottom: 3rem;
+    padding-bottom: ;
     font-size: 4rem;
     margin-bottom: 20px;
     color: var(--color-white);
+    background: linear-gradient(90deg,black,#CF5C36,black);
+    width: 100%;
+    border-radius: 2rem;
 }
 
 .galeria .fotos{
@@ -402,6 +418,9 @@ h1 {
     text-align: center;
     font-size: 4rem;
     color: var(--color-white);
+    background: linear-gradient(90deg,black,#CF5C36,black);
+    width: 80%;
+    border-radius: 2rem;
 }
 
 .maps iframe {
@@ -743,5 +762,23 @@ footer {
     }
     header .contenido a {
         font-size: 20px;
+    }
+}
+@media screen and (max-width: 340px){
+    h1{
+        font-size: 1.2rem;
+    }
+    .contente div p{
+        font-size: 0.6rem;
+    }
+    header .container a {
+        font-size: 10px;
+    }
+    header .container{
+        gap: 5px;
+        
+    }
+    .botton a{
+        font-size: 0.6rem !important;
     }
 }
