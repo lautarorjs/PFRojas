@@ -173,7 +173,7 @@ h1 {
 /* Beneficios del Curso */
 .beneficios {
     background: linear-gradient(180deg, var(--color-black), var(--color-primary) 100%);
-    padding: 50px 0;
+    padding-top: 50px;
     text-align: center;
     color: var(--color-white);
 }
@@ -195,13 +195,12 @@ h1 {
 }
 
 .beneficios ul {
-    margin-top: 20px;
+    padding: 1rem;
     list-style: disc;
 }
 
 .beneficios li {
     font-size: 1.5rem;
-    margin-bottom: 10px;
     list-style: inside;
 }
 
@@ -209,10 +208,9 @@ h1 {
 
 .edades {
     background: var(--color-primary);
-    padding: 50px 0;
+    padding:0px 0;
     text-align: center;
     color: var(--color-white);
-    padding-bottom: 5rem;
 }
 
 .container{
@@ -225,6 +223,15 @@ h1 {
     align-items: center;
     width: 80%;
 }
+
+.esto ul{
+    padding: 1rem;
+}
+
+.esto ul p{
+    font-size: 2.2rem;
+}
+
 .contenido{
     color: var(--color-white);
     width: 100%;
@@ -261,7 +268,6 @@ h1 {
     align-items: center;
     text-align: center;
     background: var(--color-primary);
-    padding-top: 18px;
 }
 
 .group{
@@ -360,7 +366,6 @@ h1 {
 }
 
 .inscripcion .bottonInscripcion a{
-    padding: 2% 25%;
     font-size: 1.5rem !important;
 }
 
@@ -413,7 +418,6 @@ h1 {
 }
 
 .maps h2 {
-    padding-top: 1rem;
     position: relative;
     text-align: center;
     font-size: 4rem;
