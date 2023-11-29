@@ -52,7 +52,7 @@ ul, li {
 }
 
 
-.container a:hover {
+.contenido a:hover {
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,13 +60,13 @@ ul, li {
     background-color: var(--color-primary);
 }
 
-header .container a {
+header .contenido a {
     font-size: 35px;
     display: flex;
     justify-content: space-between;
 }
 
-header .container p{
+header .contenido p{
     color: #000000;
     /* display: inline-block; */
     font-size: 1.4rem;
@@ -84,7 +84,7 @@ header .container p{
 }
 
 .botton:hover {
-    border: 1.7px solid #CF5C36;
+    border: 2.5px solid #CF5C36;
     background-color: #CF5C36;
 }
 
@@ -117,6 +117,7 @@ header .container p{
     width: 40%;
     right: 10%;
     top: 18.5%;
+    
 }
 
 .content div p{
@@ -171,9 +172,18 @@ h1 {
 
 /* Beneficios del Curso */
 .beneficios {
-    background: linear-gradient(180deg, var(--color-black), var(--color-primary) 100%);    padding: 50px 0;
+    background: linear-gradient(180deg, var(--color-black), var(--color-primary) 100%);
+    padding: 50px 0;
     text-align: center;
     color: var(--color-white);
+}
+
+.beneficios .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 .beneficios h2 {
@@ -192,10 +202,11 @@ h1 {
     list-style: inside;
 }
 
-/* Edades */
+/* Horarios */
 
 .edades {
-    background: linear-gradient(180deg, var(--color-primary), var(--color-black) 100%);    padding: 50px 0;
+    background: var(--color-primary);
+    padding: 50px 0;
     text-align: center;
     color: var(--color-white);
     padding-bottom: 5rem;
@@ -205,6 +216,19 @@ h1 {
     color: var(--color-white);
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contenido{
+    color: var(--color-white);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .container h2{
@@ -217,9 +241,9 @@ h1 {
 }
 
 .container ul li span{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: var(--color-text);
-    text-shadow: var(--color-white) 0.2px 0.3px 1px;
+    text-shadow: var(--color-black) 0.1px 0.3px 1.3px;
 }
 
 /* Costos */
@@ -230,7 +254,7 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(180deg, var(--color-black) 0%, var(--color-primary) 100%);
+    background: var(--color-primary);
     padding-top: 18px;
 }
 
@@ -243,12 +267,29 @@ h1 {
 
 .group img{
     border-radius: 1.4rem;
-    image-resolution: ;
 }
 
 .costos h2 {
     color: var(--color-white);
     font-size: 4rem;
+}
+
+.costos p {
+    color: var(--color-white);
+    font-size: 2rem;
+    width: 80%;
+}
+
+.costos p span {
+    font-size: 2.6rem;
+    color: var(--color-text);
+    text-shadow: var(--color-black) 0.2px 0.3px 1.3px;
+}
+
+.costos div div .price{
+    font-size: 2.2rem;
+    color: var(--color-text);
+    text-shadow: var(--color-black) 0.2px 0.3px 1.3px;
 }
 
 .product {
@@ -271,9 +312,16 @@ h1 {
     font-size: 30px;
 }
 
+.costo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Inscripción */
 .inscripcion {
-    background-color: var(--color-primary);
+    background-color: var(--color-black);
     padding: 50px 0;
     text-align: center;
     padding-top: 4rem;
@@ -289,6 +337,51 @@ h1 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: var(--color-white);
+}
+
+.inscripcion .bottonInscripcion{
+    border: 2.5px solid var(--color-primary);
+    border-radius: 0.7rem;
+    padding: 0.4rem;
+    background-color: var(--color-primary);
+}
+
+.inscripcion .bottonInscripcion a{
+    padding: 2% 25%;
+    font-size: 1.5rem !important;
+}
+
+.inscripcion .bottonInscripcion:hover {
+    border: 2.5px solid #CF5C36;
+    background-color: #CF5C36;
+}
+
+/*galeria */
+
+.galeria {
+    background: var(--color-black);
+    padding-bottom: 9rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.galeria h2 {
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.galeria .fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-image: round;
+}
+
+.galeria .fotos img{
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 /* Maps */
@@ -314,7 +407,7 @@ h1 {
 .maps iframe {
     width: 80%;
     padding-top: 4rem;
-    padding-bottom: 15rem;
+    padding-bottom: 1.8rem;
 }
 
 /* Footer */
@@ -383,6 +476,7 @@ footer {
     border-bottom: 0.01px solid black;
 }
 
+
 .gridConteiner {
     display: grid;
     grid-template-columns: 19% auto;
@@ -393,7 +487,8 @@ footer {
 
 .headerPlataform {
     grid-area: header;
-    position: relative;
+    position: sticky !important;
+
 }
 
 .navbarPlataform {
@@ -401,6 +496,10 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: black;
+}
+
+.navbarplat{
+    display: inline-block;
 }
 
 .navbarPlataform .a {
@@ -427,7 +526,6 @@ footer {
 }
 
 
-
 .navbarPlataform .a:hover {
     background-color: rgba(255, 255, 255, 0.234);
 }
@@ -435,7 +533,6 @@ footer {
 .navbarPlataform .a .video{
     text-decoration: underline;
 }
-
 
 .mainPlataform {
     grid-area: main;
@@ -479,3 +576,172 @@ footer {
     position: relative;
 }
 
+@media screen and (max-width: 1010px) {
+    .hero{
+        height: 100vh !important;
+        background-size: 100% 100%;
+    }
+    .content{
+        width: 40%;
+        right: 10%;
+        top: 17.5%;
+    }
+}
+@media screen and (max-width: 872px) {
+    .hero{
+        height: 80vh !important;
+    }
+    .content{
+        width: 40%;
+        right: 10%;
+        top: 16.5%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .container h2{
+        font-size: 2.7rem;
+    }
+    .container ul li{
+        font-size: 1.5rem;
+    }
+    .container ul li span{
+        font-size: 2rem;
+    }
+    .costos h2 {
+        font-size: 2.5rem;
+    }
+    .costos p {
+        font-size: 1.5rem;
+    }
+    .costos p span {
+        font-size: 2rem;
+    }
+    .costos div div .price{
+        font-size: 2rem;
+    }
+    .maps h2 {
+        font-size: 2.5rem;
+    }
+    .maps iframe {
+    height: 300px;
+    }
+    .inscripcion h2 {
+        font-size: 2.5rem;
+    }
+    .galeria h2 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 764px) {
+    .hero{
+        height: 70vh !important;
+    }
+    .content{
+        top: 12.5%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .content div p{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 628px) {
+    .content div p{
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 2.4rem;
+    }
+    .navbar .contei{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    .hero{
+        height: 58vh !important;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .content{
+        top: 10.5%;
+    }
+    header .contenido a {
+        font-size: 27px;
+    }
+    .botton a {
+        padding: 0px 10px;
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (max-width:528px){
+    h1{
+        font-size: 1.8rem;
+    }
+    header .container a {
+        font-size: 25px;
+    }
+    .htmlcss {
+        display: flex;
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width:500px){
+    .botton a{
+        font-size: 1.2rem !important;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    header .container a {
+        font-size: 15px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    .content div p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .hero{
+        height: 56vh!important;
+    }
+    .content{
+        top: 8.5%;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    .botton a{
+        font-size: 1rem !important;
+    }
+    .htmlcss {
+        display: flex;
+        padding-top: 0.7rem;
+    }
+}
+@media screen and (max-width: 376px){
+    h1{
+        font-size: 1.4rem;
+    }
+    .contente div p{
+        font-size: 0.8rem;
+    }
+    .content{
+        top: 9.5%;
+    }
+    .botton a{
+        font-size: 0.8rem !important;
+    }
+    header .contenido a {
+        font-size: 20px;
+    }
+}

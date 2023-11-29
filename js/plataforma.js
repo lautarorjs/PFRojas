@@ -1,11 +1,60 @@
+let opciones = {};
 
+document.addEventListener("DOMContentLoaded", function() {
+    let ultimaFechaCita = localStorage.getItem('ultimaFechaCita');
 
-window.onload = function() {
-    mostrarVideo('https://www.youtube.com/embed/T4t00Hd3qZc?si=ZPylBShuEI-O3bGS');
-    check2.disabled=true;
-    check3.disabled=true;
+    if (!ultimaFechaCita || !esMismoDia(new Date(ultimaFechaCita), new Date())) {
+        obtenerCitaDiaria();
+    }
+    function esMismoDia(fecha1, fecha2) {
+        return fecha1.getDate() === fecha2.getDate() &&
+            fecha1.getMonth() === fecha2.getMonth() &&
+            fecha1.getFullYear() === fecha2.getFullYear();
+    }
+    function mostrarCitaEnInterfaz(cita) {
+        const citaElemento = document.getElementById('cita');
+        if (citaElemento) {
+            citaElemento.innerHTML = `
+                <div class="citaDiaria">
+                    <h2>Autor: ${cita.author}</h2>
+                    <p>${cita.content}</p>
+                </div>
+            `;
+        }
+    }
+    function obtenerCitaDiaria() {
+        fetch('https://api.quotable.io/random?language=es')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                const cita = data;
+                mostrarCitaEnInterfaz(cita);
+                guardarEstado({ ultimaFechaCita: new Date() });
+            })
+            .catch(error => {
+                console.error('Error al obtener la cita desde la API:', error);
+            });
+    }
+    const estadoGuardado = localStorage.getItem('estadoEstudiante');
+
+    if (estadoGuardado) {
+        const estadoEstudiante = JSON.parse(estadoGuardado);
+        check1.checked = estadoEstudiante.checks.check1;
+        check2.checked = estadoEstudiante.checks.check2;
+        check3.checked = estadoEstudiante.checks.check3;
+        progressBar.style.width = `calc(${estadoEstudiante.progreso * 100}%)`;
+
+        const videoSeleccionado = estadoEstudiante.videoSeleccionado || 'https://www.youtube.com/embed/T4t00Hd3qZc?si=ZPylBShuEI-O3bGS';
+        mostrarVideo(videoSeleccionado);
+    } else {
+        mostrarVideo('https://www.youtube.com/embed/T4t00Hd3qZc?si=ZPylBShuEI-O3bGS');
+        calcularProgreso();
+    }
+
+    check2.disabled = true;
+    check3.disabled = true;
     document.getElementById("video1").classList.add("video");
-};
+});
 
 function mostrarVideo(url, style) {
     event.preventDefault();
@@ -13,7 +62,6 @@ function mostrarVideo(url, style) {
     
     if(style == '1'){
         document.getElementById("video1").classList.add("video");
-        document.getElementById("video2").a
     }else{
         document.getElementById("video1").classList.remove("video");
     }
@@ -27,8 +75,22 @@ function mostrarVideo(url, style) {
     }else{
         document.getElementById("video3").classList.remove("video");
     }
+    guardarEstado({ videoSeleccionado: url });
 }
 
+function guardarEstado() {
+    const estadoEstudiante = {
+        checks: {
+            check1: check1.checked,
+            check2: check2.checked,
+            check3: check3.checked,
+        },
+        progreso: calcularProgreso(),
+        ...opciones,
+    };
+
+    localStorage.setItem('estadoEstudiante', JSON.stringify(estadoEstudiante));
+}
 
 let check1 = document.getElementById("check1"),
     check2 = document.getElementById("check2"),
@@ -36,7 +98,7 @@ let check1 = document.getElementById("check1"),
     progressBar = document.getElementById("progressBar");
 
 
-    function actualizarProgreso() {
+    function calcularProgreso() {
         let progreso = 0;
     
         if (check1.checked) {
@@ -53,20 +115,14 @@ let check1 = document.getElementById("check1"),
                 progreso += 1 / 3;
                 check1.disabled = true;
                 check2.disabled = true;
-                // Swal.fire({
-                //     position: 'center',
-                //     title: 'Felicitaciones!',
-                //     text:' Has completado satisfactoriamente el modulo Online del Curso de Desarrollo Web. Nos vemos en la 2da clase!',
-                //     icon:'sucess',
-                //     showConfirmButton: true,
-                //     customClass: {
-                //         popup: 'swal2-noanimation', // Evita que SweetAlert añada espacio en blanco
-                //         content: 'swal2-noanimation' // Evita que SweetAlert añada espacio en blanco
-                //     }
-                // });
-                alert("Felicitaciones! Has completado satisfactoriamente el modulo Online del Curso de Desarrollo Web. Nos vemos en la 2da clase!")
+                Swal.fire({
+                    title: 'Felicitaciones',
+                    text: 'Has completado satisfactoriamente el módulo Online del Curso de Desarrollo Web. Nos vemos en la 2da clase!',
+                    icon: 'success',
+                    confirmButtonText: 'Entendido'
+                });
             } else {
-                check2.disabled = !check1.checked; // Asegura que check2 no esté marcado si check1 no lo está
+                check2.disabled = !check1.checked;
             }
         } else {
             check2.disabled = true;
@@ -74,26 +130,25 @@ let check1 = document.getElementById("check1"),
         }
     
         progressBar.style.width = `calc(${progreso * 100}%)`;
+        return progreso;
     }
     
     check1.addEventListener("change", () => {
         check2.disabled = !check1.checked;
         check3.disabled = !check1.checked;
-        if(check1.checked){
+        if (check1.checked) {
             check3.disabled = !check2.checked;
         }
-        actualizarProgreso();
+        guardarEstado();
     });
     
     check2.addEventListener("change", () => {
-        check3.disabled =!check2.checked;
-        actualizarProgreso();
+        check3.disabled = !check2.checked;
+        guardarEstado();
     });
     
     check3.addEventListener("change", () => {
-        actualizarProgreso();
+        guardarEstado();
     });
-
-    /* sweet alert */
 
     
