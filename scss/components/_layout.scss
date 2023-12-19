@@ -1,0 +1,479 @@
+.presentacion{
+    z-index: -1;
+    width: 100%;
+    height: 130vh;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg, rgba(55,119,113,1) 0%, rgba(0,0,0,1) 60%);
+    position: relative;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        h1{
+            font-size: 48px;
+            font-weight: 400;  
+        }
+        h3{
+            width: 90%;
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    h4{
+        height: 100%;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding: 15px;
+        color: white !important;
+        text-shadow: #CF5C36 1px 1px 1px;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+    }
+}
+.hero{
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    .conteiner{
+        width: 70%;
+        position: absolute;
+        top: 250px;
+        h3{
+            width: 100%;
+            color: white !important;
+            font-size: 60px;
+            .conteiner-animation{
+                background: #CF5C36;
+                position: relative;
+                &::after{
+                    content: "";
+                    border-left: 3px solid white;
+                    background: black;
+                    right: -23px;
+                    width: 80%;
+                    height: 105%;
+                    bottom: 0px;
+                    position: absolute;
+                    animation: maquinaescribir 3s infinite alternate steps(17);
+                }
+            }
+        }
+    }
+}
+
+@keyframes maquinaescribir{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 4.8%;
+    }
+}
+
+.formaciones{
+    z-index: -1;
+    position: relative;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg,rgba(0,0,0,1) 0%,  rgba(55,119,113,1) 95%, );
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding: 5px;
+        text-shadow: #CF5C36 1px 1px 1px;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        color: white !important;
+    }
+    .textocuatro{
+        background: linear-gradient(90deg,black,#377771,black);
+        h3{
+            text-align: center;
+            height: 100%;
+            padding: 5px;
+            font-size: 30px;
+            font-weight: 400;
+            color: white !important;
+            text-shadow: rgb(55, 119, 113) 1px 1px 1px;
+        }
+    }
+}
+.carousel{
+    .carousel-inner{
+        .carousel-item{
+            .img-fluid{
+                max-height: 100vh;
+                width: 100vw;
+                display: block;
+                margin: 0 auto;
+                object-fit: cover;
+            }
+            .carousel-caption{
+                h5{
+                    font-size: 70px;
+                    text-shadow: 12px 12px 20px rgb(0, 0, 0) !important;
+                }
+            }
+        }
+    }
+}
+
+
+/******************                ROBÓTICA Y PROGRAMACIÓN              *******************/
+
+.sectionone{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: rgb(55,119,113);
+    background: radial-gradient(rgba(0, 0, 0, 0.904) 0%, rgba(55,119,113,1) 70%);
+    border-bottom: dotted 2px;
+    .introduccion{
+        height: 100%;
+        position: relative;
+        h1{
+            height: 20%;
+            position: relative;
+            font-size: 52px;
+            text-align: center;
+            top: 50px;
+            }
+        }
+        .introduccionrobotica{
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+            iframe{
+                width: 50vw;
+                height: 100%;
+            }
+            p{
+                font-size: 30px;
+                color: black;
+                text-shadow: 1px 1px #000000a3;
+                background: linear-gradient(to right, #CF5C36,rgb(55, 119, 113));
+            }
+        }
+        .subrob{
+            margin-top: 70px;
+            text-align: center;
+        }
+    }
+
+
+.contenido{
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg, rgba(55,119,113,1) 0%, rgba(0,0,0,1) 100%);
+    .conocimientos{
+        padding-top: 90px;
+        text-align: center;
+        h4{
+            font-size: 60px;
+            text-align: center;
+        }
+        .programa{
+            position: relative;
+            margin-top: 45px;
+            ul{
+                margin-top: 50px;
+                h5{
+                    text-align: center;
+                    margin-top: 3px;
+                }
+                p{
+                    text-align: center;
+                    margin-top: 3px;
+                    // text-shadow:0.1px 0.1px whitesmoke;
+                }
+                .unp{
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                .dosp{
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                .tresp{
+                    color: rgba(255, 255, 255, 0.9);
+                }
+                .cuatrop{
+                    color: white;
+                }
+            }
+        }
+        h3{
+            text-align: center;
+            font-size: 60px;
+            color: rgb(255, 255, 255) !important;
+            text-shadow: #CF5C36 1px 1px 1px;
+            background: linear-gradient(90deg,black,#CF5C36,black);
+            height: 80px;
+            width: 100%;
+        }
+}
+}
+.alumnos{
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        width: 90%;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        text-shadow: #cf5c3645 1px 1px 1px;
+    }
+}
+.preguntas{
+    width: 100%;
+    height: auto !important;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg,rgba(0,0,0,1) 0%,  rgba(55,119,113,1) 95%, );
+    z-index: -1;
+    .titulo{
+        text-align: center;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        height: 80px;
+        text-shadow: #CF5C36 1px 1px 1px;
+        h2{
+            font-size: 60px;
+            color: white !important;
+        }
+    }
+    .proyect{
+        position: relative;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+        padding: 20px;
+        img{
+            height: 330px;
+            width: 600px;
+            border-radius: 15px;
+        }
+        iframe{
+            height: 300px;
+            width: 560px;
+        }
+        p{
+            font-size: 34px;
+        }
+        .pone{
+            color: rgba(255, 255, 255, 0.901) !important;
+        }
+        .ptwo{
+            color: rgba(255, 255, 255, 0.784) !important;
+        }
+        .pthre{
+            color: black !important;
+        }
+    }
+}
+
+
+/******************                   Sobre Nosotros                   *******************/
+.mision{
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg, rgba(55,119,113,1) 0%, rgba(0,0,0,1) 100%);
+    .mis{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+            &:hover{
+                font-size: 90px
+                !important;
+            }
+        }
+        div{
+            width: 75%;
+            p{
+                font-size: 40px;
+                color: rgba(0, 0, 0, 0.876);
+                text-shadow: 0.5px 1px 1px rgba(255, 255, 255, 0.188);
+                font-weight: 500;
+                text-align: center;
+                font-style: italic;
+                span{
+                    position: relative;
+                    &::after{
+                        background-color: #cf5c36ec;
+                        content: "";
+                        width: 100%;
+                        height: 75%;
+                        position: absolute;
+                        bottom: 3px;
+                        left: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.alumnos{
+    width: 100%;
+    height: 120vh;
+    background-color: black;
+    position: relative;
+    z-index: -1;
+    p{
+        font-size: 50px;
+        text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.67);
+        span{
+            position: relative;
+            &::after{
+                background-color: #cf5c36ec;
+                content: "";
+                width: 100%;
+                height: 75%;
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+    .subb{
+        width: 100%;
+        text-align: center;
+        margin-top:120px;
+        background: linear-gradient(90deg,black,#CF5C36,black);
+        height: 80px;
+        h3{
+            color: white !important;
+            font-size: 60px;
+            text-shadow: #CF5C36 1px 1px 1px;
+
+        }
+    }
+}
+.preguntas{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 180vh;
+    background: rgb(55,119,113);
+    background: linear-gradient(180deg,rgba(0,0,0,1) 0%,  rgba(55,119,113,1) 95%, );
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        width: 95vw;
+        margin: 0 auto;
+        padding: 10px;
+        .gallery-item {
+            align-items: normal !important;
+            position: relative;
+            overflow: hidden;
+            height: 445px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            object-fit: contain;
+            @extend %flex;
+            .gallery-item img {
+                display: block;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+/******************                   CONTACTO                   *******************/
+
+.sobrenos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(55,119,113);
+    background: radial-gradient(rgba(0, 0, 0, 0.873) 0%, rgba(55,119,113,1) 70%);
+    flex-wrap: wrap;
+    .direccion{
+        text-align: center;
+        .maps{
+            h2{
+                font-size: 55px !important;
+                padding-bottom: 10px;
+                color: black !important;
+                text-shadow: 1px 1px 1px #CF5C36;
+            }
+            .mapa{
+                width: 600px;
+                height: 500px;
+            }
+        }
+    }
+    .formulario{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        h2{
+            font-size: 50px !important;
+            padding-bottom: 10px;
+            color: black !important;
+            text-shadow: 1px 1px 1px #CF5C36;
+        }
+        .questions{
+            @extend %flex;
+            flex-direction: column;
+            div{
+                padding-top: 15px;
+                label{
+                    color: #000 !important;
+                    font-size: 27px;
+                }
+            }
+    }
+}
+}
+
+/******************                Ingreso Plataforma                *******************/
+
+.singin{
+    background-image: url(../images/nina-compu-biblioteca.jpg);
+    background-size: cover;
+    background-position: center;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.234); /* Color de fondo translúcido */
+        .login-form {
+            padding: 20px;
+            background-color: #ffffff95;
+            border-radius: 5px;
+        }
+    }
+}
